@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../static/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/tickets.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
+
+		<title>尼泊尔旅游</title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" style="background: #222222;border: 0;border-radius: 0">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">尼泊尔旅游</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="../index.html" style="color: white">尼泊尔旅游</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li data-toggle="modal" data-target="#signIn">
+							<a href="#signIn" data-target="#signIn" style="color: white">登录</a>
+						</li>
+						<li data-toggle="modal" data-target="#signUp">
+							<a href="#signUp" data-target="#signUp" style="color: white">注册</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--酒店-->
+		<div class="container">
+
+			<div class="col-md-11 col-xs-11 popular">
+				<h2>旅游景点 </h2>
+			</div>
+		</div>
+		<div class="row  hot" style="width:80%;margin:0 auto">
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="tickets-detail.html"><img src="img/prairie.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>青青草原</h5>
+						<p>￥100.00</p>
+						<p>
+							<a href="tickets-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="tickets-detail.html"><img src="img/moun1.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>掉血山</h5>
+						<p>￥200.00</p>
+						<p>
+							<a href="tickets-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="tickets-detail.html"><img src="img/moun2.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>加里奥山</h5>
+						<p>￥250.00</p>
+						<p>
+							<a href="tickets-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="tickets-detail.html"><img src="img/hot-spring.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>罗丽雅温泉</h5>
+						<p>￥300.00</p>
+						<p>
+							<a href="tickets-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="tickets-detail.html"><img src="img/game.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>阿加多游乐场</h5>
+						<p>￥389.00</p>
+						<p>
+							<a href="tickets-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="tickets-detail.html"><img src="img/memory.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>纪念馆</h5>
+						<p>￥50.00</p>
+						<p>
+							<a href="tickets-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bs-docs-footer">
+			<div class="col-md-12">
+				<p>
+					<a href="#">联系我们</a>
+					<br/><br/>
+					<em>Copyright © 2017  All Rights Reserved</em>
+				</p>
+
+			</div>
+		</footer>
+
+		<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">登录</h3>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal login-f">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Username</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput inputName" id="inputName" placeholder="手机号">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-12">
+									<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-infor">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">注册</h3>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal login-f">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Username</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput  inputName" id="inputName" placeholder="手机号">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Code</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput  inputName" id="inputName" style="width:70%;background-position: 3% 90%;float:left" placeholder="验证码">
+
+									<button type="button" class="btn btn-infor" style="float:left;margin-left:5px;height: 4.2rem">获取验证码</button>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-12">
+									<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-infor">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+</html>

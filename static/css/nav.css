@@ -1,0 +1,77 @@
+.navbar {
+	min-height: 60px;
+}
+
+
+/*.navbar-brand {
+   width: 50%;
+   height: auto;
+}*/
+
+.navbar-default {
+	background-color: rgba(0, 0, 0, .0);
+	border: 0;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.icon {
+	margin-left: 10% !important;
+}
+
+.float-r {
+	float: right !important;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #E8E8E8;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: #E8E8E8;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-size: 1.7rem;
+	margin-left: 10%;
+	text-shadow: 0 0 5px grey;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-brand {
+	font-size: 1.7rem;
+	color: white;
+	line-height: 2.7rem;
+	text-shadow: 0 0 5px grey;
+}
+
+.navbar-nav li {
+	margin-left: 25px;
+}
+
+.triangle {
+	height: 80px;
+	overflow: hidden;
+}
+
+.triangle-down {
+	display: block;
+	width: 50px;
+	height: 50px;
+	-o-transform: translate(-50%, 0) rotate(-45deg);
+	-ms-transform: translate(-50%, 0) rotate(-45deg);
+	-moz-transform: translate(-50%, 0) rotate(-45deg);
+	-webkit-transform: translate(-50%, 0) rotate(-45deg);
+	transform: translate(-50%, 0) rotate(-45deg);
+	-webkit-transition: all 225ms ease;
+	-moz-transition: all 225ms ease;
+	transition: all 225ms ease;
+	position: relative;
+	left: 49%;
+	margin-top: -32px;
+}

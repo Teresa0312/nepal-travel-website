@@ -1,0 +1,50 @@
+.bg_1 {
+	background: url('../img/map.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.nepal {
+	padding-top: 6%;
+	text-align: center;
+	color: white;
+}
+
+.nepal h1 {
+	letter-spacing: 5px;
+}
+
+.intro {
+	margin-top: 30px;
+	padding-left: 18%;
+	color: white;
+	padding-right: 18%;
+	font-size: 1.65rem;
+	line-height: 3rem;
+}
+
+.arrow_1 {
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 3%;
+}
+
+.bg_2 {
+	background: url('../img/pexels-photo-674865.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.list-group-item {
+	border: 0;
+	font-size: 1.65rem;
+	margin-bottom: 10px;
+	background: transparent;
+}
+
+.bg_3 {
+	background: url('../img/bg1.jpg') no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.bg_4 {}

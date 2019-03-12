@@ -1,0 +1,90 @@
+
+
+.no-padding {
+	padding: 0;
+}
+
+.bg-img {
+	background: url('../img/pexels-photo-674865.jpg') no-repeat;
+	min-height: 55rem;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.bg-color {
+	background: rgba(0, 0, 0, .4);
+	min-height: 55rem;
+}
+
+.control-label {
+	display: none;
+}
+
+.forminput {
+	height: 4.2rem;
+}
+
+.inputName,
+input[type="password"] {
+	text-indent: 2.3rem;
+	font-weight: normal;
+	color: black;
+	background: url(../img/login-sprite.png) no-repeat white;
+	background-position: 2% 10%;
+}
+
+input[type="password"] {
+	background-position: 2% 90%;
+}
+
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 430px;
+		margin: 30px auto;
+	}
+	.hotel {
+		padding-left: 10rem
+	}
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+.modal-body {
+	padding: 2rem 3rem;
+}
+
+.btn-infor {
+	color: white;
+	background-color: #3385FF;
+}
+
+.btn-infor:hover {
+	color: white;
+	background: #317EF3;
+}
+
+.hotel {
+	text-align: center;
+	border-right: 1px solid #E8E8E8;
+}
+
+.hotel span,
+.place span {
+	font-size: 6rem;
+	text-align: center;
+}
+
+.place {
+	padding-top: 1.7rem;
+}
+
+a,
+a:hover,
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}

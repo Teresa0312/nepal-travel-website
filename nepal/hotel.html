@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="../static/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/hotel.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
+
+		<title>尼泊尔旅游</title>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-default" style="background: #222222;border: 0;border-radius: 0">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">尼泊尔旅游</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="../index.html" style="color: white">尼泊尔旅游</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li data-toggle="modal" data-target="#signIn">
+							<a href="#signIn" data-target="#signIn" style="color: white">登录</a>
+						</li>
+						<li data-toggle="modal" data-target="#signUp">
+							<a href="#signUp" data-target="#signUp" style="color: white">注册</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--条件选择-->
+
+		<div class="row" style="width:90%;border:none;float:left">
+
+			<div class="col-md-11 types">
+
+				<form class="form-inline" style="margin-top: 20px">
+					<div class="form-group">
+						<select class="form-control" style="width: 20rem">
+							<option>目的地1</option>
+							<option>目的地2</option>
+							<option>目的地3</option>
+							<option>目的地4</option>
+							<option>目的地5</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" id="test1" placeholder="入住日期">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="test2" placeholder="退房日期">
+					</div>
+					<button type="submit" class="btn btn-infor">查看价格</button>
+				</form>
+
+				<div class="select">
+
+					<!--档次选择-->
+					<div class="level">
+						<div class="level-l">
+							<span>档次：</span>
+						</div>
+						<div class=" level-r">
+							<ul class="list-unstyled">
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">二星级/经济型
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">三星级
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">四星级
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">五星级
+                                </label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 价格选择-->
+					<div class="price">
+						<div class="price-l">
+							<span>价格：</span>
+						</div>
+						<div class=" price-r">
+							<ul class="list-unstyled">
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">150元以下
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">150-300元
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">300-600元
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">600-1000元
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">1000元以上
+                                </label>
+								</li>
+								<li style="width:30%">
+
+									自定义&nbsp<input type="text" style="width:15%">--<input type="text" style="width:15%">
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--特色选择-->
+					<div class="feature">
+						<div class="feature-l">
+							<span>特色：</span>
+						</div>
+						<div class="feature-r">
+							<ul class="list-unstyled">
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 休闲度假
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 休闲名宿
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">温泉
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">青年旅社
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">购物便捷
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">精品酒店
+                                </label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--位置选择-->
+					<div class="place" style="border-bottom: none">
+						<div class=" place-l">
+							<span>位置：</span>
+						</div>
+						<div class="place-r">
+							<ul class="list-unstyled">
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 距目的地200米以内
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 距目的地500米以内
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">距目的地1000米以内
+                                </label>
+								</li>
+								<li>
+									<label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">距目的地1000米以上
+                                </label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row  hot" style="width:80%;margin:0 auto">
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="hotel-detail.html"><img src="img/7.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>圣西斯酒店</h5>
+						<p>￥551.00</p>
+						<p>
+							<a href="hotel-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="hotel-detail.html"><img src="img/2.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>圣西斯酒店</h5>
+						<p>￥457.70</p>
+						<p>
+							<a href="hotel-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="hotel-detail.html"><img src="img/3.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>圣西斯酒店</h5>
+						<p>￥375.60</p>
+						<p>
+							<a href="hotel-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+					<a href="hotel-detail.html"><img src="img/4.jpg" alt="..."></a>
+					<div class="caption">
+						<h5>圣西斯酒店</h5>
+						<p>￥443.90</p>
+						<p>
+							<a href="hotel-detail.html" class="btn btn-infor" role="button">查看详情</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bs-docs-footer">
+			<div class="col-md-12">
+				<p>
+					<a href="#">联系我们</a>
+					<br/><br/>
+					<em>Copyright © 2017  All Rights Reserved</em>
+				</p>
+
+			</div>
+		</footer>
+
+		<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">登录</h3>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal login-f">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Username</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput inputName" id="inputName" placeholder="手机号">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-12">
+									<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-infor">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">注册</h3>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal login-f">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Username</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput  inputName" id="inputName" placeholder="手机号">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Code</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput  inputName" id="inputName" style="width:70%;background-position: 3% 90%;float:left" placeholder="验证码">
+
+									<button type="button" class="btn btn-infor" style="float:left;margin-left:5px;height: 4.2rem">获取验证码</button>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-12">
+									<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-infor">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script src="layDate-v5.0.9/laydate/laydate.js"></script>
+<!-- 改成你的路径 -->
+<script>
+	//执行一个laydate实例
+	laydate.render({
+		elem: '#test1' //指定元素
+	});
+	laydate.render({
+		elem: '#test2' //指定元素
+	});
+</script>

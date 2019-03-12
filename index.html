@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Welcome to Nepal!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="static/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="static/css/index.css">
+		<link rel="stylesheet" type="text/css" href="static/css/nav.css">
+		<link rel="stylesheet" type="text/css" href="static/css/footer.css">
+	</head>
+
+	<body>
+		<div class="container-fluid no-padding" style="min-height: 55rem;">
+
+			<div class="col-md-12 col-xs-12 bg-img no-padding">
+				<div class="col-md-12 col-xs-12 bg-color no-padding">
+					<nav class="navbar navbar-default navbar-fixed-top" id="nav">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+								<a class="navbar-brand" href="#">尼泊尔旅游</a>
+							</div>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav float-r" id="nav-list">
+									<li data-toggle="modal" data-target="#signIn">
+										<a href="#signIn" data-target="#signIn">登录</a>
+									</li>
+									<li data-toggle="modal" data-target="#signUp">
+										<a href="#signUp" data-target="#signUp">注册</a>
+									</li>
+									<li>
+										<a href="nepal/user.html">我的</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+
+					<div class="col-md-6 col-xs-8 col-md-offset-3 col-xs-offset-2" style="margin-top: 18rem;">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for..." style="height: 4.2rem">
+							<span class="input-group-btn">
+		        <button class="btn btn-infor" type="button"  style="height: 4.2rem">Go!</button>
+		      </span>
+						</div>
+						<!-- /input-group -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-md-4 col-xs-8 col-md-offset-3	 col-xs-offset-1" style="margin-top: 3rem;">
+						<div class="col-md-6 col-xs-6 hotel" style="text-align: right;">
+							<span><a href="nepal/hotel.html">酒<br/>店</a></span>
+						</div>
+						<div class="col-md-6 col-xs-6 no-padding">
+							<div class="col-md-12 col-xs-12 place">
+								<span style="font-size: 4.3rem;letter-spacing: 5px"><a href="nepal/tickets.html">景点</a></span>
+							</div>
+
+							<div class="col-md-12 col-xs-12 place no-padding" style="margin-top: 1rem;margin-left: 1rem;border-top: 1px solid white">
+								<span style="font-size: 2.5rem;"><a href="nepal/why.html">Why is Nepal?</a></span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer class="bs-docs-footer">
+			<div class="col-md-12">
+				<p>
+					<a href="#">联系我们</a>
+					<br/><br/>
+					<em>Copyright © 2017  All Rights Reserved</em>
+				</p>
+
+			</div>
+		</footer>
+
+	</body>
+
+	<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="myModalLabel">登录</h3>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal login-f">
+						<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label">Username</label>
+							<div class="col-sm-12">
+								<input type="text" class="form-control forminput inputName" id="inputName" placeholder="手机号">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+							<div class="col-sm-12">
+								<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-infor">提交</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title" id="myModalLabel">注册</h3>
+				</div>
+				<div class="modal-body">
+
+					<form class="form-horizontal login-f">
+						<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label">Username</label>
+							<div class="col-sm-12">
+								<input type="text" class="form-control forminput  inputName" id="inputName" placeholder="手机号">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label">Code</label>
+							<div class="col-sm-12">
+								<input type="text" class="form-control forminput  inputName" id="inputName" style="width:70%;background-position: 3% 90%;float:left" placeholder="验证码">
+
+								<button type="button" class="btn btn-infor" style="float:left;margin-left:5px;height: 4.2rem">获取验证码</button>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+							<div class="col-sm-12">
+								<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-infor">提交</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</html>
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>

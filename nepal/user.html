@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Welcome to Nepal!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="../static/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/home.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" style="background: #222222;border: 0;border-radius: 0">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">尼泊尔旅游</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="../index.html" style="color: white">尼泊尔旅游</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#signIn" style="color: white">退出</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid main">
+			<div class="col-md-2 main-left" id="nav-left">
+				<div class="col-md-12 nopadding">
+
+					<ul class="list-group nav-left" id="nav-left">
+
+						<li class="list-group-item li-active" name="li-active">我的信息
+							<span class="caret" name="arrow"></span>
+						</li>
+						<li id="li-hidden" name="li-hidden" style="display: none;">
+							<ul class="list-group dropdown">
+								<li class="list-group-item down">
+									<a href="infor.html" target="myIframe">基本信息</a>
+								</li>
+								<li class="list-group-item down">
+									<a href="change.html" target="myIframe">更改信息</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="list-group-item li-active" name="li-active">订单管理
+							<span class="caret" name="arrow"></span>
+						</li>
+						<li id="li-hidden" name="li-hidden" style="display: none;">
+							<ul class="list-group dropdown">
+								<li class="list-group-item down">
+									<a href="order.html" target="myIframe">全部订单</a>
+								</li>
+								<li class="list-group-item down">
+									<a href="order.html" target="myIframe">代付款</a>
+								</li>
+
+								<li class="list-group-item down">
+									<a href="order.html" target="myIframe">待评论</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-10 nopadding frame-bor">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" name="myIframe" src="infor.html"></iframe>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var navListActive = document.getElementsByName("li-active");
+	var navListHidden = document.getElementsByName("li-hidden");
+	var arrowList = document.getElementsByName("arrow");
+	for(var i = 0; i < navListActive.length; i++) {
+		navListActive[i].index = i;
+		arrowList[i].index = i;
+		navListActive[i].addEventListener("click", dropDown);
+	}
+
+	function dropDown(event) {
+		var index = event.target.index;
+		if(navListHidden[index].style.display == "block") {
+			navListHidden[index].style.display = "none";
+			navListActive[index].className = "list-group-item li-active";
+		} else {
+			navListHidden[index].style.display = "block";
+			navListActive[index].className = "list-group-item li-active dropup";
+		}
+	}
+</script>

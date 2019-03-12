@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+}
+
+a:hover {
+	color: blue;
+}
+
+.navigation {
+	margin: 0 auto;
+	font-weight: bold;
+	border-bottom: none;
+	font-size: 1em;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.navigation li {
+	padding-top: 2%;
+}
+
+.pic {
+	margin: 0 auto;
+	width: 86%;
+	padding-top: 40%;
+	background-image: url("../img/game.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.row p {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.row h3 {
+	color: red;
+	font-weight: bold;
+}
+
+#myCarousel {
+	height: 10%;
+}
+
+.item img {
+	width: 100%;
+}
+
+.na-mon {
+	padding-top: 13%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 4%;
+}
+
+.na-mon span {
+	font-size: 2em;
+	color: red;
+	font-weight: bold;
+}
+
+.na-mon p {
+	font-weight: bold;
+}
+
+.det {
+	border: 1px solid rgb(136, 141, 140);
+	margin-top: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.det h3 {
+	background-color: #F0F2F5;
+	font-weight: bold;
+	padding: 0.5%;
+}
+
+p span {
+	color: red;
+}
+
+.det h4 {
+	font-weight: bold;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.det-list {
+	margin-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.det-list img {
+	margin-bottom: 1%;
+}
+
+.det-list h4 {
+	border-left: 3px solid rgb(115, 222, 230);
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+}
+
+.det-list li {
+	line-height: 1.7em;
+}
+
+.center {
+	text-align: center;
+}
+
+.last {
+	border-top: 1px solid silver;
+	margin-top: 2em;
+	padding-left: 40%;
+	padding-top: 4%;
+}
+
+.btn-infor {
+	color: white;
+	background-color: #3385FF;
+}
+
+.btn-infor:hover {
+	color: white;
+	background: #317EF3;
+}
+
+.control-label {
+	display: none;
+}
+
+.forminput {
+	height: 4.2rem;
+}
+
+.inputName,
+input[type="password"] {
+	text-indent: 2.3rem;
+	font-weight: normal;
+	color: black;
+	background: url(../img/login-sprite.png) no-repeat white;
+	background-position: 2% 10%;
+}
+
+input[type="password"] {
+	background-position: 2% 90%;
+}
+
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 430px;
+		margin: 30px auto;
+	}
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+.modal-body {
+	padding: 2rem 3rem;
+}

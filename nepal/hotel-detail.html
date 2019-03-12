@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="../static/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/hotel-detail.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
+
+		<title>酒店详情</title>
+	</head>
+
+	<body>
+		<!--导航 部分-->
+
+		<nav class="navbar navbar-default" style="background: #222222;border: 0;border-radius: 0">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">尼泊尔旅游</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="../index.html" style="color: white">尼泊尔旅游</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li data-toggle="modal" data-target="#signIn">
+							<a href="#signIn" data-target="#signIn" style="color: white">登录</a>
+						</li>
+						<li data-toggle="modal" data-target="#signUp">
+							<a href="#signUp" data-target="#signUp" style="color: white">注册</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<div class="container" style="margin-top:10px">
+			<div class="row">
+				<p>圣西斯酒店</p>
+				<div class="pic">
+					<div class="show">
+						<div class="list">
+							<img src="img/2.jpg">
+						</div>
+						<div class="lists">
+							<div class="list-1">
+								<img src="img/4.jpg">
+							</div>
+							<div class="list-2">
+								<img src="img/5.jpg">
+							</div>
+							<div class="list-3">
+								<img src="img/1.jpg">
+							</div>
+						</div>
+
+						<div class="lists">
+							<div class="list-1">
+								<img src="img/7.jpg">
+							</div>
+							<div class="list-2">
+								<img src="img/3.jpg">
+							</div>
+							<div class="list-3">
+								<img src="img/6.jpg">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row" style="margin-top:4%">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs firstmenu" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#masterwork" aria-controls="masterwork" role="tab" data-toggle="tab">房间预定</a>
+					</li>
+					<li role="presentation">
+						<a href="#home" aria-controls="home" role="tab" data-toggle="tab">酒店介绍</a>
+					</li>
+					<li role="presentation">
+						<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">周边酒店</a>
+					</li>
+					<li role="presentation">
+						<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">周边餐厅</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content" style="margin-left:5%">
+					<div role="tabpanel" class="tab-pane active" id="masterwork">
+						<div class="search">
+							<div class="col-md-3">
+								<form>
+									<input type="text" class="form-control" id="test1" placeholder="入住日期">
+								</form>
+							</div>
+
+							<div class="col-md-3">
+								<form>
+									<input type="text" class="form-control" id="test2" placeholder="退房日期">
+								</form>
+							</div>
+							<div class="col-md-2" style="margin-bottom:3%">
+								<form>
+									<button type="submit" class="btn btn-infor ">查看价格</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="hou-res">
+							<div class="res-1">
+								<form>
+									<ul class="list-unstyled">
+										<li>有鱼订房</li>
+										<li>特大床</li>
+										<li style="color:red">￥1400</li>
+										<li><button type="submit" class="btn btn-infor ">预定</button></li>
+									</ul>
+								</form>
+							</div>
+							<div class="res-1">
+								<form>
+									<ul class="list-unstyled">
+										<li>Booking.com</li>
+										<li>特大床-带露台</li>
+										<li style="color:red">￥1400</li>
+										<li><button type="submit" class="btn btn-infor">预定</button></li>
+									</ul>
+								</form>
+							</div>
+							<div class="res-1">
+								<form>
+									<ul class="list-unstyled">
+										<li>agoda</li>
+										<li>双人间</li>
+										<li style="color:red">￥1400</li>
+										<li><button type="submit" class="btn btn-infor ">预定</button></li>
+									</ul>
+								</form>
+							</div>
+							<div class="res-1">
+								<form>
+									<ul class="list-unstyled">
+										<li>携程</li>
+										<li>客房-带露台</li>
+										<li style="color:red">￥1100</li>
+										<li><button type="submit" class="btn btn-infor ">预定</button></li>
+									</ul>
+								</form>
+							</div>
+							<div class="res-1">
+								<form>
+									<ul class="list-unstyled">
+										<li>有鱼订房</li>
+										<li>特大床</li>
+										<li style="color:red">￥1400</li>
+										<li><button type="submit" class="btn btn-infor ">预定</button></li>
+									</ul>
+								</form>
+							</div>
+							<div class="res-1">
+								<form>
+									<ul class="list-unstyled">
+										<li>有鱼订房</li>
+										<li>特大床</li>
+										<li style="color:red">￥1400</li>
+										<li><button type="submit" class="btn btn-infor ">预定</button></li>
+									</ul>
+								</form>
+							</div>
+							<div class="res-1" style="border-bottom: none">
+								<form>
+									<ul class="list-unstyled">
+										<li>有鱼订房</li>
+										<li>特大床</li>
+										<li style="color:red">￥1400</li>
+										<li><button type="submit" class="btn btn-infor ">预定</button></li>
+									</ul>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="home">
+						<div class="introduce">
+							<div class="information">
+								<div class="inf-l">
+									基本信息
+								</div>
+								<div class="inf-r">
+									<form>
+										<ul class="list-unstyled">
+											<li>入住时间：15:00以后</li>
+											<li>离店时间：12:00之前</li>
+											<li>建成于：2009年</li>
+											<li>酒店规模：400间客房</li>
+											</br>
+											</br>
+											<li>联系方式:45896214785</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+
+							<div class="facility">
+								<div class="fac-l" style="margin-top: 10px">
+									房间设施
+								</div>
+								<div class="fac-r">
+									<form>
+										<ul class="list-unstyled">
+											<li>空调</li>
+											<li>暖气</li>
+											<li>吹风机</li>
+											<li>宽带上网</li>
+											<li>24小时热水</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+
+							<div class="serve">
+								<div class="ser-l" style="margin-top: 10px">
+									酒店服务
+								</div>
+								<div class="ser-r">
+									<form>
+										<ul class="list-unstyled">
+											<li>行李寄存</li>
+											<li>洗衣服务</li>
+											<li>租车</li>
+											<li>携带宠物</li>
+											<li>早餐服务</li>
+											<li>接站服务</li>
+										</ul>
+									</form>
+
+								</div>
+							</div>
+
+							<div class="detial" style="border:none">
+								<div class="det-l" style="margin-top: 10px">
+									酒店信息
+								</div>
+								<div class="det-r" style="margin-top:10px">
+									酒店地址：芜湖市长江北路与港湾路交叉路口往北50米</br>
+									位置距离：</br>
+									位于芜湖市长江北路与港湾路交叉路口往北50米出，驾车10分钟便可到达方特欢乐世界，芜湖长江大桥等。</br>
+									【前往酒店】 -距离南京禄口国际机场92.9公里，乘坐出租车约1.5-2小时；-距离芜湖站9.7公里，乘坐出租车约20分钟；-距离芜湖汽车站大桥分站4.4公里，乘坐出租车约10分钟。
+									</br>
+									【酒店周边信息】：-距离长江边1公里，步行约15分钟；-距离银湖2.8公里，乘坐出租车约10分钟；-距离芜湖美的工业园3.8公里，乘坐出租车约10分钟。
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="profile" style="margin-top:15px;margin-left:3%">
+						<div class="row  lists" style="width:100%;margin:0 auto">
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="detail.html"><img src="img/7.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯酒店</h5>
+										<p>￥543.90</p>
+										<p>
+											<a href="detail.html" class="btn btn-infor" role="button">查看详情</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="detail.html"><img src="img/3.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯酒店1</h5>
+										<p>￥431.60</p>
+										<p>
+											<a href="detail.html" class="btn btn-infor" role="button">查看详情</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="detail.html"><img src="img/5.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯酒店2</h5>
+										<p>￥475.60</p>
+										<p>
+											<a href="detail.html" class="btn btn-infor" role="button">查看详情</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="detail.html"><img src="img/2.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯酒店3</h5>
+										<p>￥537.90</p>
+										<p>
+											<a href="detail.html" class="btn btn-infor" role="button">查看详情</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="messages" style="margin-top:15px;margin-left:2%">
+						<div class="row  lists">
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="bookdetail.html"><img src="img/11.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯餐厅</h5>
+										<p>￥143.90</p>
+										<p>
+											<a href="#" class="btn btn-infor" role="button">预定</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="bookdetail.html"><img src="img/12.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯餐厅</h5>
+										<p>￥31.60</p>
+										<p>
+											<a href="#" class="btn btn-infor" role="button">预定</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="bookdetail.html"><img src="img/13.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯餐厅</h5>
+										<p>￥75.60</p>
+										<p>
+											<a href="#" class="btn btn-infor" role="button">预定</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-3">
+								<div class="thumbnail">
+									<a href="bookdetail.html"><img src="img/14.jpg" alt="..."></a>
+									<div class="caption">
+										<h5>圣西斯餐厅</h5>
+										<p>￥837.90</p>
+										<p>
+											<a href="#" class="btn btn-infor" role="button">预定</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="bs-docs-footer">
+			<div class="col-md-12">
+				<p>
+					<a href="#">联系我们</a>
+					<br/><br/>
+					<em>Copyright © 2017  All Rights Reserved</em>
+				</p>
+
+			</div>
+		</footer>
+
+		<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">登录</h3>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal login-f">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Username</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput inputName" id="inputName" placeholder="手机号">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-12">
+									<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-infor">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">注册</h3>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal login-f">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Username</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput  inputName" id="inputName" placeholder="手机号">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Code</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control forminput  inputName" id="inputName" style="width:70%;background-position: 3% 90%;float:left" placeholder="验证码">
+
+									<button type="button" class="btn btn-infor" style="float:left;margin-left:5px;height: 4.2rem">获取验证码</button>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+								<div class="col-sm-12">
+									<input type="password" class="form-control forminput" id="inputPassword" placeholder="密码 Password">
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-infor">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script src="layDate-v5.0.9/laydate/laydate.js"></script>
+<!-- 改成你的路径 -->
+<script>
+	//执行一个laydate实例
+	laydate.render({
+		elem: '#test1' //指定元素
+	});
+	laydate.render({
+		elem: '#test2' //指定元素
+	});
+</script>
